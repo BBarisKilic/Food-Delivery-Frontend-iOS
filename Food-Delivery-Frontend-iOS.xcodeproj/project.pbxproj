@@ -16,11 +16,12 @@
 		0986934726D13F6B000CC4FA /* RestaurantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986934626D13F6B000CC4FA /* RestaurantManager.swift */; };
 		0986934926D1407E000CC4FA /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986934826D1407E000CC4FA /* Restaurant.swift */; };
 		0986934B26D141B7000CC4FA /* RestaurantDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986934A26D141B7000CC4FA /* RestaurantDetail.swift */; };
+		0986934F26D14998000CC4FA /* MainViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986934E26D14998000CC4FA /* MainViewControllerExt.swift */; };
 		098A671926D1240000F8EF39 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671826D1240000F8EF39 /* MainViewController.swift */; };
-		098A671C26D124FE00F8EF39 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671B26D124FE00F8EF39 /* UIImageView.swift */; };
-		098A671F26D1275C00F8EF39 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671E26D1275C00F8EF39 /* UIView.swift */; };
-		098A672126D1280900F8EF39 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A672026D1280900F8EF39 /* UIButton.swift */; };
-		098A672426D128EC00F8EF39 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A672326D128EC00F8EF39 /* UITextField.swift */; };
+		098A671C26D124FE00F8EF39 /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671B26D124FE00F8EF39 /* UIImageViewExt.swift */; };
+		098A671F26D1275C00F8EF39 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671E26D1275C00F8EF39 /* UIViewExt.swift */; };
+		098A672126D1280900F8EF39 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A672026D1280900F8EF39 /* UIButtonExt.swift */; };
+		098A672426D128EC00F8EF39 /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A672326D128EC00F8EF39 /* UITextFieldExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,11 +37,12 @@
 		0986934826D1407E000CC4FA /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		0986934A26D141B7000CC4FA /* RestaurantDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetail.swift; sourceTree = "<group>"; };
 		0986934D26D145AD000CC4FA /* RestaurantData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RestaurantData.json; sourceTree = "<group>"; };
+		0986934E26D14998000CC4FA /* MainViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerExt.swift; sourceTree = "<group>"; };
 		098A671826D1240000F8EF39 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		098A671B26D124FE00F8EF39 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
-		098A671E26D1275C00F8EF39 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		098A672026D1280900F8EF39 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
-		098A672326D128EC00F8EF39 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		098A671B26D124FE00F8EF39 /* UIImageViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
+		098A671E26D1275C00F8EF39 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		098A672026D1280900F8EF39 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		098A672326D128EC00F8EF39 /* UITextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +98,11 @@
 		098A671A26D124DF00F8EF39 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				098A671B26D124FE00F8EF39 /* UIImageView.swift */,
-				098A671E26D1275C00F8EF39 /* UIView.swift */,
-				098A672026D1280900F8EF39 /* UIButton.swift */,
-				098A672326D128EC00F8EF39 /* UITextField.swift */,
+				098A671B26D124FE00F8EF39 /* UIImageViewExt.swift */,
+				098A671E26D1275C00F8EF39 /* UIViewExt.swift */,
+				098A672026D1280900F8EF39 /* UIButtonExt.swift */,
+				098A672326D128EC00F8EF39 /* UITextFieldExt.swift */,
+				0986934E26D14998000CC4FA /* MainViewControllerExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -214,12 +217,13 @@
 				0986934926D1407E000CC4FA /* Restaurant.swift in Sources */,
 				0986934B26D141B7000CC4FA /* RestaurantDetail.swift in Sources */,
 				0933092C26CED5CA00E3841E /* LoginViewController.swift in Sources */,
-				098A671C26D124FE00F8EF39 /* UIImageView.swift in Sources */,
+				0986934F26D14998000CC4FA /* MainViewControllerExt.swift in Sources */,
+				098A671C26D124FE00F8EF39 /* UIImageViewExt.swift in Sources */,
 				0933092826CED5CA00E3841E /* AppDelegate.swift in Sources */,
-				098A672426D128EC00F8EF39 /* UITextField.swift in Sources */,
+				098A672426D128EC00F8EF39 /* UITextFieldExt.swift in Sources */,
 				0933092A26CED5CA00E3841E /* SceneDelegate.swift in Sources */,
-				098A672126D1280900F8EF39 /* UIButton.swift in Sources */,
-				098A671F26D1275C00F8EF39 /* UIView.swift in Sources */,
+				098A672126D1280900F8EF39 /* UIButtonExt.swift in Sources */,
+				098A671F26D1275C00F8EF39 /* UIViewExt.swift in Sources */,
 				0986934726D13F6B000CC4FA /* RestaurantManager.swift in Sources */,
 				098A671926D1240000F8EF39 /* MainViewController.swift in Sources */,
 			);

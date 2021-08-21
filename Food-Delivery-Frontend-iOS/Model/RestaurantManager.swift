@@ -7,41 +7,57 @@
 
 import Foundation
 
+protocol RestaurantManagerDelegate {
+    func didUpdateRestaurant(_ restaurantManager: RestaurantManager, restaurantDetails: [RestaurantDetail])
+    func didFailWithError(error: Error)
+}
+
 struct RestaurantManager {
     let mainURL = "https://api.jsonbin.io/b/"
     let dataId = "6121074f076a223676af0c92"
     
+    var delegate: RestaurantManagerDelegate?
+    
     func fetchData() {
         let urlString = "\(mainURL)\(dataId)"
-        performRequest(urlString: urlString)
+        performRequest(with: urlString)
     }
     
-    func performRequest(urlString: String) {
+    func performRequest(with urlString: String) {
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)
-            let task = session.dataTask(with: url) {
-                (data, response, error) in
-                
+            let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error!)
+                    self.delegate?.didFailWithError(error: error!)
                     return
                 }
-                
                 if let safeData = data {
-                    self.parseJSON(restaurantData: safeData)
+                    if let restaurantDetails = self.parseJSON(safeData) {
+                        self.delegate?.didUpdateRestaurant(self, restaurantDetails: restaurantDetails)
+                    }
                 }
             }
             task.resume()
         }
     }
     
-    func parseJSON(restaurantData: Data) {
+    func parseJSON(_ restaurantData: Data) -> [RestaurantDetail]? {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(Restaurant.self, from: restaurantData)
-            print(decodedData.restaurants[0].name)
+            var restaurantDetails: [RestaurantDetail] = []
+            for restaurant in decodedData.restaurants {
+                let name = restaurant.name
+                let image = restaurant.image
+                let location = restaurant.location
+                let restaurantDetail = RestaurantDetail(name: name, image: image, location: location)
+                restaurantDetails.append(restaurantDetail)
+            }
+            return restaurantDetails
+            
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
+            return nil
         }
     }
 }

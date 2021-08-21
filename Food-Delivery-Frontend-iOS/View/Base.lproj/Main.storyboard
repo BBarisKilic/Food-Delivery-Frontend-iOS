@@ -187,7 +187,7 @@
             </objects>
             <point key="canvasLocation" x="7.2000000000000002" y="87.931034482758619"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Main-->
         <scene sceneID="QZv-AN-LfJ">
             <objects>
                 <viewController storyboardIdentifier="main" id="DwU-Jr-ihu" customClass="MainViewController" customModule="Food_Delivery_Frontend_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -288,9 +288,10 @@
                             <constraint firstItem="sbU-Uw-SkO" firstAttribute="bottom" secondItem="JJA-LL-rej" secondAttribute="bottom" id="rRN-mu-gSD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xjE-B6-H1f"/>
+                    <navigationItem key="navigationItem" title="Main" id="xjE-B6-H1f"/>
                     <connections>
                         <outlet property="appIconImageView" destination="8to-IL-Uhu" id="WRf-nK-N1H"/>
+                        <outlet property="collectionView" destination="n25-oV-rcZ" id="XMr-Vv-kuG"/>
                         <outlet property="topView" destination="Ryi-Ct-y0R" id="9yx-Fp-CTu"/>
                     </connections>
                 </viewController>

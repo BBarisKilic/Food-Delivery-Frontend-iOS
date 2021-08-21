@@ -10,18 +10,36 @@ import UIKit
 class MainViewController: UIViewController {
     @IBOutlet weak var appIconImageView: UIImageView!
     @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
-    var restaurant = RestaurantManager()
+    var restaurantManager = RestaurantManager()
+    var restaurantDetails: [RestaurantDetail] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        restaurant.fetchData()
+        restaurantManager.delegate = self
+        restaurantManager.fetchData()
+        
+        //self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        self.collectionView.register(UINib(nibName: <#T##String#>, bundle: <#T##Bundle?#>), forCellWithReuseIdentifier: <#T##String#>)
+        
         setLayout()
     }
     
     func setLayout() {
         appIconImageView.makeRounded()
         topView.addElevation()
+    }
+}
+
+extension MainViewController: RestaurantManagerDelegate {
+    func didUpdateRestaurant(_ restaurantManager: RestaurantManager, restaurantDetails: [RestaurantDetail]) {
+        self.restaurantDetails = restaurantDetails
+    }
+
+    func didFailWithError(error: Error) {
+        print(error)
     }
 }
