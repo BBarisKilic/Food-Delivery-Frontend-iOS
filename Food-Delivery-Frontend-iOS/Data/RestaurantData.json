@@ -5,8 +5,32 @@
 //  Created by Bülent Barış Kılıç on 21.08.2021.
 //
 
-#ifndef RestaurantData_h
-#define RestaurantData_h
-
-
-#endif /* RestaurantData_h */
+{
+    "restaurants": [
+        {
+            "name": "Ottoman's Steakhouse Burger",
+            "image": "https://cdn.yemeksepeti.com/CategoryImages/TR_ISTANBUL/ottoman_big.gif",
+            "location": "Mehmet Akif Ersoy Mahallesi, Çekmeköy"
+        },
+        {
+            "name": "Üçgen Pizzeria",
+            "image": "https://cdn.yemeksepeti.com/CategoryImages/TR_ISTANBUL/ucgenpizzeria1_big.gif",
+            "location": "Mehmet Akif Ersoy Mahallesi, Çekmeköy"
+        },
+        {
+            "name": "Sinan Burger",
+            "image": "https://cdn.yemeksepeti.com/CategoryImages/TR_CANAKKALE/sinanburger_big.gif",
+            "location": "Çamlık Mahallesi, Çekmeköy"
+        },
+        {
+            "name": "BS Waffle",
+            "image": "https://cdn.yemeksepeti.com/CategoryImages/TR_ISTANBUL/bs-waffle--kumpir-lcv1_big.gif",
+            "location": "Mimar Sinan Mahallesi, Çekmeköy"
+        },
+        {
+            "name": "Park Balık",
+            "image": "https://cdn.yemeksepeti.com/CategoryImages/TR_ISTANBUL/parkbalik_big.gif",
+            "location": "Madenler Mahallesi, Ümraniye"
+        }
+    ]
+}

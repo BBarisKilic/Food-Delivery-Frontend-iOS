@@ -35,6 +35,7 @@
 		0986934626D13F6B000CC4FA /* RestaurantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantManager.swift; sourceTree = "<group>"; };
 		0986934826D1407E000CC4FA /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		0986934A26D141B7000CC4FA /* RestaurantDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetail.swift; sourceTree = "<group>"; };
+		0986934D26D145AD000CC4FA /* RestaurantData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RestaurantData.json; sourceTree = "<group>"; };
 		098A671826D1240000F8EF39 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		098A671B26D124FE00F8EF39 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		098A671E26D1275C00F8EF39 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		0933092626CED5CA00E3841E /* Food-Delivery-Frontend-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				0986934C26D14554000CC4FA /* Data */,
 				098A671D26D1253300F8EF39 /* App */,
 				098A671A26D124DF00F8EF39 /* Extension */,
 				09F5B72126D0243A002A31BF /* Model */,
@@ -81,6 +83,14 @@
 				0933093526CED5CA00E3841E /* Info.plist */,
 			);
 			path = "Food-Delivery-Frontend-iOS";
+			sourceTree = "<group>";
+		};
+		0986934C26D14554000CC4FA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0986934D26D145AD000CC4FA /* RestaurantData.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		098A671A26D124DF00F8EF39 /* Extension */ = {
