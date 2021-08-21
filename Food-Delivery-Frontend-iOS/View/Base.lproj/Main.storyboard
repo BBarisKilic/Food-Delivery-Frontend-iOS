@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Food_Delivery_Frontend_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Food_Delivery_Frontend_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,20 +183,80 @@
             </objects>
             <point key="canvasLocation" x="7.2000000000000002" y="87.931034482758619"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="QZv-AN-LfJ">
             <objects>
-                <viewController id="DwU-Jr-ihu" sceneMemberID="viewController">
+                <viewController id="DwU-Jr-ihu" customClass="MainViewController" customModule="Food_Delivery_Frontend_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iGR-jn-NaH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JJA-LL-rej">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ryi-Ct-y0R">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="287.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="xLd-M9-Mff">
+                                                <rect key="frame" x="0.0" y="52" width="414" height="183"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="105" translatesAutoresizingMaskIntoConstraints="NO" id="wNd-6Y-cJ7">
+                                                        <rect key="frame" x="9.5" y="0.0" width="395.5" height="54"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delicious food for you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whx-ta-VRd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="240.5" height="54"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIconBigger" translatesAutoresizingMaskIntoConstraints="NO" id="8to-IL-Uhu">
+                                                                <rect key="frame" x="345.5" y="0.0" width="50" height="54"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVp-9H-aWL">
+                                                        <rect key="frame" x="145" y="154" width="124.5" height="29"/>
+                                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.2901960784" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="xLd-M9-Mff" firstAttribute="leading" secondItem="Ryi-Ct-y0R" secondAttribute="leading" id="6od-o3-HDa"/>
+                                            <constraint firstAttribute="trailing" secondItem="xLd-M9-Mff" secondAttribute="trailing" id="Esa-7c-wgY"/>
+                                            <constraint firstItem="xLd-M9-Mff" firstAttribute="centerY" secondItem="Ryi-Ct-y0R" secondAttribute="centerY" id="yHz-d0-OWh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUb-9n-AMh">
+                                        <rect key="frame" x="0.0" y="287.5" width="414" height="287"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSE-3v-UFJ">
+                                        <rect key="frame" x="0.0" y="574.5" width="414" height="287.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="sbU-Uw-SkO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JJA-LL-rej" secondAttribute="trailing" id="Pjr-6A-Jqk"/>
+                            <constraint firstItem="JJA-LL-rej" firstAttribute="top" secondItem="iGR-jn-NaH" secondAttribute="top" id="VhJ-oU-cPu"/>
+                            <constraint firstItem="JJA-LL-rej" firstAttribute="leading" secondItem="iGR-jn-NaH" secondAttribute="leading" id="ja8-nb-Lys"/>
+                            <constraint firstItem="sbU-Uw-SkO" firstAttribute="bottom" secondItem="JJA-LL-rej" secondAttribute="bottom" id="rRN-mu-gSD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="appIconImageView" destination="8to-IL-Uhu" id="WRf-nK-N1H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpN-Gf-3d7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="88"/>
+            <point key="canvasLocation" x="750.72463768115949" y="87.723214285714278"/>
         </scene>
     </scenes>
     <resources>
