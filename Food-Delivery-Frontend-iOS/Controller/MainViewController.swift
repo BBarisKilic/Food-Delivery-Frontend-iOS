@@ -49,7 +49,6 @@ class MainViewController: UIViewController {
     
     func collectionView(_ collectionView: UICollectionView,
       didSelectItemAt indexPath: IndexPath) {
-        print("Cell \(restaurantDetails[indexPath.row].name) clicked")
+        print("\(restaurantDetails[indexPath.row].name) clicked")
       }
-    
 }
