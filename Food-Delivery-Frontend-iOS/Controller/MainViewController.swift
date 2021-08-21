@@ -9,9 +9,19 @@ import UIKit
 
 class MainViewController: UIViewController {
     @IBOutlet weak var appIconImageView: UIImageView!
+    @IBOutlet weak var topView: UIView!
+    
+    var restaurant = RestaurantManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIImageView.makeRounded(<#T##self: UIImageView##UIImageView#>)
+        
+        restaurant.fetchData()
+        setLayout()
+    }
+    
+    func setLayout() {
+        appIconImageView.makeRounded()
+        topView.addElevation()
     }
 }
