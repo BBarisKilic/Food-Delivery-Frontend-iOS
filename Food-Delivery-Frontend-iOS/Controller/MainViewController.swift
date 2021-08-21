@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
     
     func setLayout() {
         appIconImageView.makeRounded()
-        topView.addElevation()
+        topView.addElevation(cornerRadius: 35)
     }
     
     func resetLayout() {
@@ -53,6 +53,8 @@ class MainViewController: UIViewController {
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "RestaurantDetail") as! RestaurantDetailController
+        
+        nextViewController.restaurantDetails = restaurantDetails
         
         navigationController?.pushViewController(nextViewController, animated: true)
       }

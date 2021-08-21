@@ -9,9 +9,9 @@ import UIKit
 
 extension UIView {
     
-    func addElevation() {
+    func addElevation(cornerRadius: CGFloat) {
         self.layer.masksToBounds = true
-        self.layer.cornerRadius = 35
+        self.layer.cornerRadius = cornerRadius
         self.layer.shadowPath =
               UIBezierPath(roundedRect: self.bounds,
               cornerRadius: self.layer.cornerRadius).cgPath
@@ -20,5 +20,10 @@ extension UIView {
         self.layer.shadowOffset = CGSize(width: 1, height: 1)
         self.layer.shadowRadius = 1
         self.layer.masksToBounds = false
+    }
+    
+    func addCornerRadius(cornerRadius: CGFloat) {
+        self.layer.masksToBounds = true
+        self.layer.cornerRadius = cornerRadius
     }
 }

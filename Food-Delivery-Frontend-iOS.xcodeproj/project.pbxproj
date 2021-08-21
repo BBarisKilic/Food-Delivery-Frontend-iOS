@@ -23,6 +23,9 @@
 		0986935E26D19435000CC4FA /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986935D26D19435000CC4FA /* UIColorExt.swift */; };
 		0986936026D1A0BA000CC4FA /* RestaurantDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986935F26D1A0BA000CC4FA /* RestaurantDetailController.swift */; };
 		0986936226D1A9C7000CC4FA /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986936126D1A9C7000CC4FA /* Food.swift */; };
+		0986936426D1B624000CC4FA /* RestaurantDetailControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986936326D1B624000CC4FA /* RestaurantDetailControllerExt.swift */; };
+		0986936826D1B997000CC4FA /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986936626D1B997000CC4FA /* FoodItem.swift */; };
+		0986936926D1B997000CC4FA /* FoodItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0986936726D1B997000CC4FA /* FoodItem.xib */; };
 		098A671926D1240000F8EF39 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671826D1240000F8EF39 /* MainViewController.swift */; };
 		098A671C26D124FE00F8EF39 /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671B26D124FE00F8EF39 /* UIImageViewExt.swift */; };
 		098A671F26D1275C00F8EF39 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671E26D1275C00F8EF39 /* UIViewExt.swift */; };
@@ -50,6 +53,9 @@
 		0986935D26D19435000CC4FA /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		0986935F26D1A0BA000CC4FA /* RestaurantDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailController.swift; sourceTree = "<group>"; };
 		0986936126D1A9C7000CC4FA /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		0986936326D1B624000CC4FA /* RestaurantDetailControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailControllerExt.swift; sourceTree = "<group>"; };
+		0986936626D1B997000CC4FA /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		0986936726D1B997000CC4FA /* FoodItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodItem.xib; sourceTree = "<group>"; };
 		098A671826D1240000F8EF39 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		098A671B26D124FE00F8EF39 /* UIImageViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
 		098A671E26D1275C00F8EF39 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 		0986935026D156C2000CC4FA /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				0986936526D1B981000CC4FA /* FoodItem */,
 				0986935526D15711000CC4FA /* RestaurantItem */,
 			);
 			path = Component;
@@ -125,6 +132,15 @@
 			path = RestaurantItem;
 			sourceTree = "<group>";
 		};
+		0986936526D1B981000CC4FA /* FoodItem */ = {
+			isa = PBXGroup;
+			children = (
+				0986936626D1B997000CC4FA /* FoodItem.swift */,
+				0986936726D1B997000CC4FA /* FoodItem.xib */,
+			);
+			path = FoodItem;
+			sourceTree = "<group>";
+		};
 		098A671A26D124DF00F8EF39 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +150,7 @@
 				098A672326D128EC00F8EF39 /* UITextFieldExt.swift */,
 				0986934E26D14998000CC4FA /* MainViewControllerExt.swift */,
 				0986935D26D19435000CC4FA /* UIColorExt.swift */,
+				0986936326D1B624000CC4FA /* RestaurantDetailControllerExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -236,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0933093426CED5CA00E3841E /* LaunchScreen.storyboard in Resources */,
+				0986936926D1B997000CC4FA /* FoodItem.xib in Resources */,
 				0933093126CED5CA00E3841E /* Assets.xcassets in Resources */,
 				0933092F26CED5CA00E3841E /* Main.storyboard in Resources */,
 				0986935926D1576F000CC4FA /* RestaurantItem.xib in Resources */,
@@ -250,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0986934926D1407E000CC4FA /* Restaurant.swift in Sources */,
+				0986936426D1B624000CC4FA /* RestaurantDetailControllerExt.swift in Sources */,
 				0986934B26D141B7000CC4FA /* RestaurantDetail.swift in Sources */,
+				0986936826D1B997000CC4FA /* FoodItem.swift in Sources */,
 				0933092C26CED5CA00E3841E /* LoginViewController.swift in Sources */,
 				0986934F26D14998000CC4FA /* MainViewControllerExt.swift in Sources */,
 				098A671C26D124FE00F8EF39 /* UIImageViewExt.swift in Sources */,

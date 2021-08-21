@@ -29,7 +29,7 @@ extension MainViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RestaurantItem", for: indexPath) as! RestaurantItem
-        cell.setData(text: self.restaurantDetails[indexPath.row].name, image: self.restaurantDetails[indexPath.row].image)
+        cell.setData(name: self.restaurantDetails[indexPath.row].name, image: self.restaurantDetails[indexPath.row].image)
         
         return cell
     }

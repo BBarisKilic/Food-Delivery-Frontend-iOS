@@ -18,9 +18,8 @@ class RestaurantItem: UICollectionViewCell {
         // Initialization code
     }
     
-    func setData(text: String, image: String) {
-        self.restaurantLabel.text = text
-        print(image)
+    func setData(name: String, image: String) {
+        self.restaurantLabel.text = name
         self.restaurantImage.downloaded(from: image)
     }
 }
