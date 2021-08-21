@@ -19,6 +19,7 @@
 		0986934F26D14998000CC4FA /* MainViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986934E26D14998000CC4FA /* MainViewControllerExt.swift */; };
 		0986935826D1576F000CC4FA /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986935626D1576F000CC4FA /* RestaurantItem.swift */; };
 		0986935926D1576F000CC4FA /* RestaurantItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0986935726D1576F000CC4FA /* RestaurantItem.xib */; };
+		0986935C26D186D9000CC4FA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986935B26D186D9000CC4FA /* TabBarController.swift */; };
 		098A671926D1240000F8EF39 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671826D1240000F8EF39 /* MainViewController.swift */; };
 		098A671C26D124FE00F8EF39 /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671B26D124FE00F8EF39 /* UIImageViewExt.swift */; };
 		098A671F26D1275C00F8EF39 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671E26D1275C00F8EF39 /* UIViewExt.swift */; };
@@ -42,6 +43,7 @@
 		0986934E26D14998000CC4FA /* MainViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerExt.swift; sourceTree = "<group>"; };
 		0986935626D1576F000CC4FA /* RestaurantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantItem.swift; sourceTree = "<group>"; };
 		0986935726D1576F000CC4FA /* RestaurantItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantItem.xib; sourceTree = "<group>"; };
+		0986935B26D186D9000CC4FA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		098A671826D1240000F8EF39 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		098A671B26D124FE00F8EF39 /* UIImageViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
 		098A671E26D1275C00F8EF39 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				0933092B26CED5CA00E3841E /* LoginViewController.swift */,
 				098A671826D1240000F8EF39 /* MainViewController.swift */,
+				0986935B26D186D9000CC4FA /* TabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				0933092A26CED5CA00E3841E /* SceneDelegate.swift in Sources */,
 				098A672126D1280900F8EF39 /* UIButtonExt.swift in Sources */,
 				098A671F26D1275C00F8EF39 /* UIViewExt.swift in Sources */,
+				0986935C26D186D9000CC4FA /* TabBarController.swift in Sources */,
 				0986934726D13F6B000CC4FA /* RestaurantManager.swift in Sources */,
 				098A671926D1240000F8EF39 /* MainViewController.swift in Sources */,
 			);

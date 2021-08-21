@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
 
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "main") as! MainViewController
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "TabBar") as! UITabBarController
         
         nextViewController.modalPresentationStyle = .fullScreen
         
