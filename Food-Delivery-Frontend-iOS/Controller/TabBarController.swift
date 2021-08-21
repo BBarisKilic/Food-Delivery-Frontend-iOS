@@ -13,7 +13,11 @@ class TabBarController: UITabBarController {
         super.viewDidLoad()
         
         let appearanceNavigationBar = UINavigationBar.appearance()
-        appearanceNavigationBar.barTintColor = UIColor(hex: 0xFFFA4A0C)
+        appearanceNavigationBar.setBackgroundImage(UIImage(), for: .default)
+        appearanceNavigationBar.shadowImage = UIImage()
+        appearanceNavigationBar.backgroundColor = .clear
+        appearanceNavigationBar.isTranslucent = true
+        appearanceNavigationBar.tintColor = .white
         
         self.tabBar.tintColor = .white
         self.tabBar.unselectedItemTintColor = .white.withAlphaComponent(0.8)

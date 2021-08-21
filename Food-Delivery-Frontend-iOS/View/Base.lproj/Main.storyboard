@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Food_Delivery_Frontend_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Food_Delivery_Frontend_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -312,6 +312,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9E-JJ-Vv6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2148" y="98"/>
+        </scene>
+        <!--Restaurant Detail Controller-->
+        <scene sceneID="5Gg-0G-byw">
+            <objects>
+                <viewController storyboardIdentifier="RestaurantDetail" id="mbw-0I-Y6O" customClass="RestaurantDetailController" customModule="Food_Delivery_Frontend_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q9w-Nw-o0K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="uK9-SV-hax">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnL-5T-4Js">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="256.5"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.2901960784" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeX-p2-Jk3">
+                                        <rect key="frame" x="0.0" y="280.5" width="414" height="581.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zeX-p2-Jk3" firstAttribute="top" secondItem="uK9-SV-hax" secondAttribute="top" constant="280.5" id="ncT-Mt-2hX"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Px0-Ke-HAC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Px0-Ke-HAC" firstAttribute="trailing" secondItem="uK9-SV-hax" secondAttribute="trailing" id="3a9-j8-kCi"/>
+                            <constraint firstItem="Px0-Ke-HAC" firstAttribute="bottom" secondItem="uK9-SV-hax" secondAttribute="bottom" id="Qsa-sj-kgZ"/>
+                            <constraint firstItem="uK9-SV-hax" firstAttribute="leading" secondItem="Px0-Ke-HAC" secondAttribute="leading" id="rfi-jG-bFn"/>
+                            <constraint firstItem="uK9-SV-hax" firstAttribute="top" secondItem="q9w-Nw-o0K" secondAttribute="top" id="v2Y-X5-Vdu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="topView" destination="hnL-5T-4Js" id="Q94-FV-EjY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHM-b7-RbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3021.739130434783" y="97.767857142857139"/>
         </scene>
         <!--Item-->
         <scene sceneID="nS3-6C-2Bb">

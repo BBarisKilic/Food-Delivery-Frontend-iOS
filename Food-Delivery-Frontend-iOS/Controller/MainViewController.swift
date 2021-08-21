@@ -50,5 +50,10 @@ class MainViewController: UIViewController {
     func collectionView(_ collectionView: UICollectionView,
       didSelectItemAt indexPath: IndexPath) {
         print("\(restaurantDetails[indexPath.row].name) clicked")
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "RestaurantDetail") as! RestaurantDetailController
+        
+        navigationController?.pushViewController(nextViewController, animated: true)
       }
 }
