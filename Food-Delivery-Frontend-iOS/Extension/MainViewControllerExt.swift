@@ -13,6 +13,8 @@ extension MainViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RestaurantItem", for: indexPath) as! RestaurantItem
+        cell.setData(text: self.restaurantDetails[indexPath.row].name)
+        return cell
     }
 }

@@ -17,6 +17,8 @@
 		0986934926D1407E000CC4FA /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986934826D1407E000CC4FA /* Restaurant.swift */; };
 		0986934B26D141B7000CC4FA /* RestaurantDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986934A26D141B7000CC4FA /* RestaurantDetail.swift */; };
 		0986934F26D14998000CC4FA /* MainViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986934E26D14998000CC4FA /* MainViewControllerExt.swift */; };
+		0986935826D1576F000CC4FA /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986935626D1576F000CC4FA /* RestaurantItem.swift */; };
+		0986935926D1576F000CC4FA /* RestaurantItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0986935726D1576F000CC4FA /* RestaurantItem.xib */; };
 		098A671926D1240000F8EF39 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671826D1240000F8EF39 /* MainViewController.swift */; };
 		098A671C26D124FE00F8EF39 /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671B26D124FE00F8EF39 /* UIImageViewExt.swift */; };
 		098A671F26D1275C00F8EF39 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A671E26D1275C00F8EF39 /* UIViewExt.swift */; };
@@ -38,6 +40,8 @@
 		0986934A26D141B7000CC4FA /* RestaurantDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetail.swift; sourceTree = "<group>"; };
 		0986934D26D145AD000CC4FA /* RestaurantData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RestaurantData.json; sourceTree = "<group>"; };
 		0986934E26D14998000CC4FA /* MainViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerExt.swift; sourceTree = "<group>"; };
+		0986935626D1576F000CC4FA /* RestaurantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantItem.swift; sourceTree = "<group>"; };
+		0986935726D1576F000CC4FA /* RestaurantItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantItem.xib; sourceTree = "<group>"; };
 		098A671826D1240000F8EF39 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		098A671B26D124FE00F8EF39 /* UIImageViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
 		098A671E26D1275C00F8EF39 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 		0933092626CED5CA00E3841E /* Food-Delivery-Frontend-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				0986935026D156C2000CC4FA /* Components */,
 				0986934C26D14554000CC4FA /* Data */,
 				098A671D26D1253300F8EF39 /* App */,
 				098A671A26D124DF00F8EF39 /* Extension */,
@@ -93,6 +98,23 @@
 				0986934D26D145AD000CC4FA /* RestaurantData.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		0986935026D156C2000CC4FA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0986935526D15711000CC4FA /* RestaurantItem */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0986935526D15711000CC4FA /* RestaurantItem */ = {
+			isa = PBXGroup;
+			children = (
+				0986935626D1576F000CC4FA /* RestaurantItem.swift */,
+				0986935726D1576F000CC4FA /* RestaurantItem.xib */,
+			);
+			path = RestaurantItem;
 			sourceTree = "<group>";
 		};
 		098A671A26D124DF00F8EF39 /* Extension */ = {
@@ -204,6 +226,7 @@
 				0933093426CED5CA00E3841E /* LaunchScreen.storyboard in Resources */,
 				0933093126CED5CA00E3841E /* Assets.xcassets in Resources */,
 				0933092F26CED5CA00E3841E /* Main.storyboard in Resources */,
+				0986935926D1576F000CC4FA /* RestaurantItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +242,7 @@
 				0933092C26CED5CA00E3841E /* LoginViewController.swift in Sources */,
 				0986934F26D14998000CC4FA /* MainViewControllerExt.swift in Sources */,
 				098A671C26D124FE00F8EF39 /* UIImageViewExt.swift in Sources */,
+				0986935826D1576F000CC4FA /* RestaurantItem.swift in Sources */,
 				0933092826CED5CA00E3841E /* AppDelegate.swift in Sources */,
 				098A672426D128EC00F8EF39 /* UITextFieldExt.swift in Sources */,
 				0933092A26CED5CA00E3841E /* SceneDelegate.swift in Sources */,

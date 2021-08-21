@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var restaurantManager = RestaurantManager()
-    var restaurantDetails: [RestaurantDetail] = []
+    var restaurantDetails: [RestaurantDetail] = [RestaurantDetail(name: "name", image: "image", location: "location"),RestaurantDetail(name: "name", image: "image", location: "location"),RestaurantDetail(name: "name", image: "image", location: "location"),RestaurantDetail(name: "name", image: "image", location: "location")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class MainViewController: UIViewController {
         
         //self.collectionView.delegate = self
         self.collectionView.dataSource = self
-        self.collectionView.register(UINib(nibName: <#T##String#>, bundle: <#T##Bundle?#>), forCellWithReuseIdentifier: <#T##String#>)
+        self.collectionView.register(UINib(nibName: "RestaurantItem", bundle: nil), forCellWithReuseIdentifier: "RestaurantItem")
         
         setLayout()
     }
