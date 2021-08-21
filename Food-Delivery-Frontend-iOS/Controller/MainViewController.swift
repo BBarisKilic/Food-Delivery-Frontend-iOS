@@ -13,7 +13,9 @@ class MainViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var restaurantManager = RestaurantManager()
-    var restaurantDetails: [RestaurantDetail] = [RestaurantDetail(name: "name", image: "image", location: "location"),RestaurantDetail(name: "name", image: "image", location: "location"),RestaurantDetail(name: "name", image: "image", location: "location"),RestaurantDetail(name: "name", image: "image", location: "location")]
+    var restaurantDetails: [RestaurantDetail] = []
+    var estimateWidth = 160.0
+    var cellMarginSize = 16.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,25 +23,33 @@ class MainViewController: UIViewController {
         restaurantManager.delegate = self
         restaurantManager.fetchData()
         
-        //self.collectionView.delegate = self
+        self.setLayout()
+        
+        self.collectionView.delegate = self
         self.collectionView.dataSource = self
         self.collectionView.register(UINib(nibName: "RestaurantItem", bundle: nil), forCellWithReuseIdentifier: "RestaurantItem")
         
-        setLayout()
+        self.setGridView()
     }
     
     func setLayout() {
         appIconImageView.makeRounded()
         topView.addElevation()
     }
-}
-
-extension MainViewController: RestaurantManagerDelegate {
-    func didUpdateRestaurant(_ restaurantManager: RestaurantManager, restaurantDetails: [RestaurantDetail]) {
-        self.restaurantDetails = restaurantDetails
+    
+    func resetLayout() {
+        self.collectionView.reloadData()
     }
-
-    func didFailWithError(error: Error) {
-        print(error)
+    
+    func setGridView() {
+        let flow = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
+        flow.minimumInteritemSpacing = CGFloat(self.cellMarginSize)
+        flow.minimumLineSpacing = CGFloat(self.cellMarginSize)
     }
+    
+    func collectionView(_ collectionView: UICollectionView,
+      didSelectItemAt indexPath: IndexPath) {
+        print("Cell \(restaurantDetails[indexPath.row].name) clicked")
+      }
+    
 }

@@ -79,7 +79,7 @@
 		0933092626CED5CA00E3841E /* Food-Delivery-Frontend-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				0986935026D156C2000CC4FA /* Components */,
+				0986935026D156C2000CC4FA /* Component */,
 				0986934C26D14554000CC4FA /* Data */,
 				098A671D26D1253300F8EF39 /* App */,
 				098A671A26D124DF00F8EF39 /* Extension */,
@@ -100,12 +100,12 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		0986935026D156C2000CC4FA /* Components */ = {
+		0986935026D156C2000CC4FA /* Component */ = {
 			isa = PBXGroup;
 			children = (
 				0986935526D15711000CC4FA /* RestaurantItem */,
 			);
-			path = Components;
+			path = Component;
 			sourceTree = "<group>";
 		};
 		0986935526D15711000CC4FA /* RestaurantItem */ = {

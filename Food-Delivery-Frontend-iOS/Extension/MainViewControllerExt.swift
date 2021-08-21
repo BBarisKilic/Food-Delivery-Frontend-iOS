@@ -7,6 +7,20 @@
 
 import UIKit
 
+extension MainViewController: RestaurantManagerDelegate {
+    func didUpdateRestaurant(_ restaurantManager: RestaurantManager, restaurantDetails: [RestaurantDetail]) {
+        self.restaurantDetails = restaurantDetails
+        print(restaurantDetails.count)
+        DispatchQueue.main.async {
+            self.resetLayout()
+        }
+    }
+
+    func didFailWithError(error: Error) {
+        print(error)
+    }
+}
+
 extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.restaurantDetails.count
@@ -16,5 +30,22 @@ extension MainViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RestaurantItem", for: indexPath) as! RestaurantItem
         cell.setData(text: self.restaurantDetails[indexPath.row].name)
         return cell
+    }
+}
+
+extension MainViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = self.calculateWith()
+        return CGSize(width: width, height: width)
+    }
+    
+    func calculateWith() -> CGFloat {
+        let estimateWidth = CGFloat(estimateWidth)
+        let cellCount = floor(CGFloat(self.view.frame.size.width / estimateWidth))
+        
+        let margin = CGFloat(cellMarginSize * 2)
+        let width = (self.view.frame.size.width - CGFloat(cellMarginSize) * (cellCount - 1) - margin) / cellCount
+        
+        return width
     }
 }
