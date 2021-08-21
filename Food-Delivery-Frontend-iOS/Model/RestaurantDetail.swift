@@ -11,4 +11,5 @@ struct RestaurantDetail: Decodable {
     let name: String
     let image: String
     let location: String
+    let foods: [Food]
 }

@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Food: Decodable {
+    let name: String
+    let explanation: String
+    let image: String
+    let price: Double
+}

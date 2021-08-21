@@ -10,9 +10,12 @@ import UIKit
 class RestaurantDetailController: UIViewController {
     
     @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         self.setLayout()
     }

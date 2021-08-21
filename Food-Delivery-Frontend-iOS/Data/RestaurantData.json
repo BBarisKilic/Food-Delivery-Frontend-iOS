@@ -41,22 +41,126 @@
         {
             "name": "Üçgen Pizzeria",
             "image": "https://cdn.yemeksepeti.com/CategoryImages/TR_ISTANBUL/ucgenpizzeria1_big.gif",
-            "location": "Mehmet Akif Ersoy Mahallesi, Çekmeköy"
+            "location": "Mehmet Akif Ersoy Mahallesi, Çekmeköy",
+            "foods": [
+                {
+                    "name": "Gurme Burger Menü",
+                    "explanation": "Gurme Burger (150 gr. dana köfte, özel sos, kıvırcık marul, domates, karamelize soğan, füme et, cheddar peyniri) + Patates Kızartması + İçecek",
+                    "image": "https://cdn.yemeksepeti.com//restaurant/TR_ISTANBUL/ottoman-s-steakhouse-burger-pizza-cekmekoy-mehmet-akif-mah/gurme-burger-menu_big.jpg",
+                    "price": 39.2
+                },
+                {
+                    "name": "Cheeseburger Menü",
+                    "explanation": "Cheeseburger (150 gr. dana köfte, özel sos, kıvırcık marul, domates, karamelize soğan, cheddar peyniri) + Patates Kızartması + İçecek",
+                    "image": "https://cdn.yemeksepeti.com//restaurant/TR_ISTANBUL/ottoman-s-steakhouse-burger-pizza-cekmekoy-mehmet-akif-mah/cheeseburger-menu_big.jpg",
+                    "price": 37.8
+                },
+                {
+                    "name": "Karışık Pizza (Büyük)",
+                    "explanation": "Mozzarella peyniri, pizza sos, mantar, biber, sucuk, sosis, zeytin",
+                    "image": "https://cdn.yemeksepeti.com//restaurant/TR_ISTANBUL/ottoman-s-steakhouse-burger-pizza-cekmekoy-mehmet-akif-mah/karisik-pizza-buyuk_big.jpg",
+                    "price": 37.8
+                },
+                {
+                    "name": "Ottoman Burger Menü",
+                    "explanation": "Mozzarella peyniri, pizza sos, mantar, biber, sucuk, sosis, zeytin",
+                    "image": "Ottoman Burger (150 gr. dana köfte, özel sos, kıvırcık marul, domates, karamelize soğan, pastırma, cheddar peyniri) + Patates Kızartması + İçecek",
+                    "price": 39.2
+                }
+            ]
         },
         {
             "name": "Pilavuu",
             "image": "https://cdn.yemeksepeti.com/CategoryImages/TR_ISTANBUL/pilavu_big.gif",
-            "location": "İnönü Mahallesi, Sancaktepe"
+            "location": "İnönü Mahallesi, Sancaktepe",
+            "foods": [
+                {
+                    "name": "Gurme Burger Menü",
+                    "explanation": "Gurme Burger (150 gr. dana köfte, özel sos, kıvırcık marul, domates, karamelize soğan, füme et, cheddar peyniri) + Patates Kızartması + İçecek",
+                    "image": "https://cdn.yemeksepeti.com//restaurant/TR_ISTANBUL/ottoman-s-steakhouse-burger-pizza-cekmekoy-mehmet-akif-mah/gurme-burger-menu_big.jpg",
+                    "price": 39.2
+                },
+                {
+                    "name": "Cheeseburger Menü",
+                    "explanation": "Cheeseburger (150 gr. dana köfte, özel sos, kıvırcık marul, domates, karamelize soğan, cheddar peyniri) + Patates Kızartması + İçecek",
+                    "image": "https://cdn.yemeksepeti.com//restaurant/TR_ISTANBUL/ottoman-s-steakhouse-burger-pizza-cekmekoy-mehmet-akif-mah/cheeseburger-menu_big.jpg",
+                    "price": 37.8
+                },
+                {
+                    "name": "Karışık Pizza (Büyük)",
+                    "explanation": "Mozzarella peyniri, pizza sos, mantar, biber, sucuk, sosis, zeytin",
+                    "image": "https://cdn.yemeksepeti.com//restaurant/TR_ISTANBUL/ottoman-s-steakhouse-burger-pizza-cekmekoy-mehmet-akif-mah/karisik-pizza-buyuk_big.jpg",
+                    "price": 37.8
+                },
+                {
+                    "name": "Ottoman Burger Menü",
+                    "explanation": "Mozzarella peyniri, pizza sos, mantar, biber, sucuk, sosis, zeytin",
+                    "image": "Ottoman Burger (150 gr. dana köfte, özel sos, kıvırcık marul, domates, karamelize soğan, pastırma, cheddar peyniri) + Patates Kızartması + İçecek",
+                    "price": 39.2
+                }
+            ]
         },
         {
             "name": "Mahal Gurme",
             "image": "https://cdn.yemeksepeti.com/CategoryImages/TR_ISTANBUL/mahal3_big.gif",
-            "location": "Mimar Sinan Mahallesi, Çekmeköy"
+            "location": "Mimar Sinan Mahallesi, Çekmeköy",
+            "foods": [
+                {
+                    "name": "Gurme Burger Menü",
+                    "explanation": "Gurme Burger (150 gr. dana köfte, özel sos, kıvırcık marul, domates, karamelize soğan, füme et, cheddar peyniri) + Patates Kızartması + İçecek",
+                    "image": "https://cdn.yemeksepeti.com//restaurant/TR_ISTANBUL/ottoman-s-steakhouse-burger-pizza-cekmekoy-mehmet-akif-mah/gurme-burger-menu_big.jpg",
+                    "price": 39.2
+                },
+                {
+                    "name": "Cheeseburger Menü",
+                    "explanation": "Cheeseburger (150 gr. dana köfte, özel sos, kıvırcık marul, domates, karamelize soğan, cheddar peyniri) + Patates Kızartması + İçecek",
+                    "image": "https://cdn.yemeksepeti.com//restaurant/TR_ISTANBUL/ottoman-s-steakhouse-burger-pizza-cekmekoy-mehmet-akif-mah/cheeseburger-menu_big.jpg",
+                    "price": 37.8
+                },
+                {
+                    "name": "Karışık Pizza (Büyük)",
+                    "explanation": "Mozzarella peyniri, pizza sos, mantar, biber, sucuk, sosis, zeytin",
+                    "image": "https://cdn.yemeksepeti.com//restaurant/TR_ISTANBUL/ottoman-s-steakhouse-burger-pizza-cekmekoy-mehmet-akif-mah/karisik-pizza-buyuk_big.jpg",
+                    "price": 37.8
+                },
+                {
+                    "name": "Ottoman Burger Menü",
+                    "explanation": "Mozzarella peyniri, pizza sos, mantar, biber, sucuk, sosis, zeytin",
+                    "image": "Ottoman Burger (150 gr. dana köfte, özel sos, kıvırcık marul, domates, karamelize soğan, pastırma, cheddar peyniri) + Patates Kızartması + İçecek",
+                    "price": 39.2
+                }
+            ]
         },
         {
             "name": "Park Balık",
             "image": "https://cdn.yemeksepeti.com/CategoryImages/TR_ISTANBUL/parkbalik_big.gif",
-            "location": "Madenler Mahallesi, Ümraniye"
+            "location": "Madenler Mahallesi, Ümraniye",
+            "foods": [
+                {
+                    "name": "Gurme Burger Menü",
+                    "explanation": "Gurme Burger (150 gr. dana köfte, özel sos, kıvırcık marul, domates, karamelize soğan, füme et, cheddar peyniri) + Patates Kızartması + İçecek",
+                    "image": "https://cdn.yemeksepeti.com//restaurant/TR_ISTANBUL/ottoman-s-steakhouse-burger-pizza-cekmekoy-mehmet-akif-mah/gurme-burger-menu_big.jpg",
+                    "price": 39.2
+                },
+                {
+                    "name": "Cheeseburger Menü",
+                    "explanation": "Cheeseburger (150 gr. dana köfte, özel sos, kıvırcık marul, domates, karamelize soğan, cheddar peyniri) + Patates Kızartması + İçecek",
+                    "image": "https://cdn.yemeksepeti.com//restaurant/TR_ISTANBUL/ottoman-s-steakhouse-burger-pizza-cekmekoy-mehmet-akif-mah/cheeseburger-menu_big.jpg",
+                    "price": 37.8
+                },
+                {
+                    "name": "Karışık Pizza (Büyük)",
+                    "explanation": "Mozzarella peyniri, pizza sos, mantar, biber, sucuk, sosis, zeytin",
+                    "image": "https://cdn.yemeksepeti.com//restaurant/TR_ISTANBUL/ottoman-s-steakhouse-burger-pizza-cekmekoy-mehmet-akif-mah/karisik-pizza-buyuk_big.jpg",
+                    "price": 37.8
+                },
+                {
+                    "name": "Ottoman Burger Menü",
+                    "explanation": "Mozzarella peyniri, pizza sos, mantar, biber, sucuk, sosis, zeytin",
+                    "image": "Ottoman Burger (150 gr. dana köfte, özel sos, kıvırcık marul, domates, karamelize soğan, pastırma, cheddar peyniri) + Patates Kızartması + İçecek",
+                    "price": 39.2
+                }
+            ]
         }
     ]
 }

@@ -15,11 +15,12 @@ protocol RestaurantManagerDelegate {
 struct RestaurantManager {
     let mainURL = "https://api.jsonbin.io/b/"
     let dataId = "6121074f076a223676af0c92"
+    let versionNumber = "2"
     
     var delegate: RestaurantManagerDelegate?
     
     func fetchData() {
-        let urlString = "\(mainURL)\(dataId)"
+        let urlString = "\(mainURL)\(dataId)/\(versionNumber)"
         performRequest(with: urlString)
     }
     
@@ -50,7 +51,9 @@ struct RestaurantManager {
                 let name = restaurant.name
                 let image = restaurant.image
                 let location = restaurant.location
-                let restaurantDetail = RestaurantDetail(name: name, image: image, location: location)
+                let foods = restaurant.foods
+                
+                let restaurantDetail = RestaurantDetail(name: name, image: image, location: location, foods: foods)
                 restaurantDetails.append(restaurantDetail)
             }
             return restaurantDetails
