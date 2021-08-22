@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     
     func setLayout() {
         //TopView
-        topView.addElevation(cornerRadius: 35)
+        topView.addCornerRadiusAndElevation(cornerRadius: 35)
         
         //LoginButton
         loginButton.makeSidesRounded()

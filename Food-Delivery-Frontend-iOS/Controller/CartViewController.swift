@@ -13,6 +13,7 @@ protocol SharedDataDelegate: AnyObject {
 
 class CartViewController: UIViewController {
     
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var totalPriceLabel: UILabel!
     @IBOutlet weak var orderButton: UIButton!
@@ -34,7 +35,7 @@ class CartViewController: UIViewController {
         
         setGridView()
         
-        orderButton.makeSidesRounded()
+        setLayout()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,6 +53,10 @@ class CartViewController: UIViewController {
         totalPriceLabel.text = "Total Price: \(String(format: "%.2f", totalPrice)) TL"
         
         resetLayout()
+    }
+    
+    func setLayout() {
+        orderButton.makeSidesRounded()
     }
     
     func resetLayout() {

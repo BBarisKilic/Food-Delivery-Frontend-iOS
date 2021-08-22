@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
     
     func setLayout() {
         appIconImageView.makeRounded()
-        topView.addElevation(cornerRadius: 35)
+        topView.addCornerRadiusAndElevation(cornerRadius: 35)
     }
     
     func resetLayout() {

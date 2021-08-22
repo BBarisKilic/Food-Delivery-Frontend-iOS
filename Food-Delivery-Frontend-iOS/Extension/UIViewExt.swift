@@ -9,7 +9,7 @@ import UIKit
 
 extension UIView {
     
-    func addElevation(cornerRadius: CGFloat) {
+    func addCornerRadiusAndElevation(cornerRadius: CGFloat) {
         self.layer.cornerRadius = cornerRadius
         self.layer.shadowPath =
               UIBezierPath(roundedRect: self.bounds,

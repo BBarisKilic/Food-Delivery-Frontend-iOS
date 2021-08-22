@@ -33,7 +33,7 @@ class RestaurantViewController: UIViewController {
     }
     
     func setLayout() {
-        topView.addElevation(cornerRadius: 35)
+        topView.addCornerRadiusAndElevation(cornerRadius: 35)
         restaurantNameLabel.text = restaurantDetails[restaurantId].name
         restaurantImageView.downloaded(from: restaurantDetails[restaurantId].image)
         restaurantAddressLabel.text = restaurantDetails[restaurantId].location
