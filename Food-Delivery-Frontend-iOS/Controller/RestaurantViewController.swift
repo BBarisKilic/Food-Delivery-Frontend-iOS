@@ -50,8 +50,12 @@ class RestaurantViewController: UIViewController {
         print("\(restaurantDetails[restaurantId].foods[indexPath.row].name) clicked")
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let foodVC = storyboard.instantiateViewController(identifier: "Food")
+        let foodViewController = storyboard.instantiateViewController(identifier: "Food") as! FoodViewController
         
-        present(foodVC, animated: true, completion: nil)
+        foodViewController.restaurantId = restaurantId
+        foodViewController.foodId = indexPath.row
+        foodViewController.restaurantDetails = restaurantDetails
+        
+        present(foodViewController, animated: true, completion: nil)
     }
 }

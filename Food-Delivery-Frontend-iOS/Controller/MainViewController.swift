@@ -23,13 +23,13 @@ class MainViewController: UIViewController {
         restaurantManager.delegate = self
         restaurantManager.fetchData()
         
-        self.setLayout()
+        setLayout()
         
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
-        self.collectionView.register(UINib(nibName: "RestaurantItem", bundle: nil), forCellWithReuseIdentifier: "RestaurantItem")
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(UINib(nibName: "RestaurantItem", bundle: nil), forCellWithReuseIdentifier: "RestaurantItem")
         
-        self.setGridView()
+        setGridView()
     }
     
     func setLayout() {
@@ -38,7 +38,7 @@ class MainViewController: UIViewController {
     }
     
     func resetLayout() {
-        self.collectionView.reloadData()
+        collectionView.reloadData()
     }
     
     func setGridView() {
@@ -52,11 +52,11 @@ class MainViewController: UIViewController {
         print("\(restaurantDetails[indexPath.row].name) clicked")
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Restaurant") as! RestaurantViewController
+        let restaurantViewController = storyBoard.instantiateViewController(withIdentifier: "Restaurant") as! RestaurantViewController
         
-        nextViewController.restaurantId = indexPath.row
-        nextViewController.restaurantDetails = restaurantDetails
+        restaurantViewController.restaurantId = indexPath.row
+        restaurantViewController.restaurantDetails = restaurantDetails
         
-        navigationController?.pushViewController(nextViewController, animated: true)
+        navigationController?.pushViewController(restaurantViewController, animated: true)
       }
 }

@@ -26,17 +26,17 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q1D-rp-t4E">
-                                <rect key="frame" x="95" y="11.5" width="101" height="49"/>
+                                <rect key="frame" x="95" y="10.5" width="101" height="51"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yH-Kd-32T">
-                                        <rect key="frame" x="0.0" y="0.0" width="101" height="19.5"/>
-                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="18"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                         <color key="textColor" red="0.98039215690000003" green="0.2901960784" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1q-Af-5aJ">
-                                        <rect key="frame" x="0.0" y="29.5" width="101" height="19.5"/>
-                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="18"/>
+                                        <rect key="frame" x="0.0" y="30.5" width="101" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                         <color key="textColor" red="0.98039215690000003" green="0.2901960784" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>

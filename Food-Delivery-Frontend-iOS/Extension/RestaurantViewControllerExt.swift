@@ -10,12 +10,12 @@ import UIKit
 extension RestaurantViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return self.restaurantDetails[0].foods.count
+        return self.restaurantDetails[restaurantId].foods.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodItem", for: indexPath) as! FoodItem
-        cell.setData(image: self.restaurantDetails[0].foods[indexPath.row].image, name: self.restaurantDetails[0].foods[indexPath.row].name,  price: self.restaurantDetails[0].foods[indexPath.row].price)
+        cell.setData(image: self.restaurantDetails[restaurantId].foods[indexPath.row].image, name: self.restaurantDetails[restaurantId].foods[indexPath.row].name,  price: self.restaurantDetails[restaurantId].foods[indexPath.row].price)
         
         return cell
     }

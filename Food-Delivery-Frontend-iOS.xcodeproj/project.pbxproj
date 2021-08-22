@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		091712B726D2490D00BBB471 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091712B626D2490D00BBB471 /* FoodViewController.swift */; };
+		091712B926D276B900BBB471 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091712B826D276B900BBB471 /* CartViewController.swift */; };
 		0933092826CED5CA00E3841E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0933092726CED5CA00E3841E /* AppDelegate.swift */; };
 		0933092A26CED5CA00E3841E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0933092926CED5CA00E3841E /* SceneDelegate.swift */; };
 		0933092C26CED5CA00E3841E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0933092B26CED5CA00E3841E /* LoginViewController.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		091712B626D2490D00BBB471 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		091712B826D276B900BBB471 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		0933092426CED5CA00E3841E /* Food-Delivery-Frontend-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food-Delivery-Frontend-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0933092726CED5CA00E3841E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0933092926CED5CA00E3841E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				0986935B26D186D9000CC4FA /* TabBarController.swift */,
 				0986935F26D1A0BA000CC4FA /* RestaurantViewController.swift */,
 				091712B626D2490D00BBB471 /* FoodViewController.swift */,
+				091712B826D276B900BBB471 /* CartViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				098A672126D1280900F8EF39 /* UIButtonExt.swift in Sources */,
 				0986936226D1A9C7000CC4FA /* Food.swift in Sources */,
 				098A671F26D1275C00F8EF39 /* UIViewExt.swift in Sources */,
+				091712B926D276B900BBB471 /* CartViewController.swift in Sources */,
 				0986935C26D186D9000CC4FA /* TabBarController.swift in Sources */,
 				0986934726D13F6B000CC4FA /* RestaurantManager.swift in Sources */,
 				0986935E26D19435000CC4FA /* UIColorExt.swift in Sources */,
