@@ -10,64 +10,58 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CartItem" customModule="Food_Delivery_Frontend_iOS" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CartItem" id="gTV-IL-0wX" customClass="CartItem" customModule="Food_Delivery_Frontend_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fC9-J6-cpa">
-                        <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="9hb-SW-8j2">
-                                <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C52-ZW-O5e">
-                                        <rect key="frame" x="0.0" y="0.0" width="36" height="50"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8l8-cF-rWX">
-                                        <rect key="frame" x="37" y="0.0" width="100" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="hb1-JS-bBC"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n88-cC-myJ">
-                                        <rect key="frame" x="138" y="0.0" width="22" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="22" id="cbj-KP-hnZ"/>
-                                        </constraints>
-                                        <color key="tintColor" red="0.98039215690000003" green="0.2901960784" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="delete.left.fill" catalog="system"/>
-                                        <connections>
-                                            <action selector="deletePressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Yv9-zp-7y8"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C52-ZW-O5e">
+                                <rect key="frame" x="10" y="15" width="16" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8l8-cF-rWX">
+                                <rect key="frame" x="41" y="15" width="39" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n88-cC-myJ">
+                                <rect key="frame" x="288" y="14" width="22" height="22"/>
+                                <color key="tintColor" red="0.98039215690000003" green="0.2901960784" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="delete.left.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="deletePressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Yv9-zp-7y8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="9hb-SW-8j2" secondAttribute="bottom" id="a1G-mq-n9a"/>
-                            <constraint firstItem="9hb-SW-8j2" firstAttribute="top" secondItem="fC9-J6-cpa" secondAttribute="top" id="njx-Zc-LaY"/>
-                            <constraint firstItem="9hb-SW-8j2" firstAttribute="leading" secondItem="fC9-J6-cpa" secondAttribute="leading" id="ub6-fp-V8f"/>
-                            <constraint firstAttribute="trailing" secondItem="9hb-SW-8j2" secondAttribute="trailing" id="wxp-HV-v3S"/>
+                            <constraint firstAttribute="height" constant="50" id="2eL-Bx-BEm"/>
+                            <constraint firstAttribute="width" constant="320" id="6kw-9c-G31"/>
+                            <constraint firstItem="8l8-cF-rWX" firstAttribute="centerY" secondItem="fC9-J6-cpa" secondAttribute="centerY" id="8QS-Gc-kAr"/>
+                            <constraint firstItem="C52-ZW-O5e" firstAttribute="centerY" secondItem="fC9-J6-cpa" secondAttribute="centerY" id="BXD-rI-G16"/>
+                            <constraint firstAttribute="trailing" secondItem="n88-cC-myJ" secondAttribute="trailing" constant="10" id="Fis-t9-gC3"/>
+                            <constraint firstAttribute="width" secondItem="fC9-J6-cpa" secondAttribute="height" multiplier="32:5" id="ICC-uW-Hox"/>
+                            <constraint firstItem="8l8-cF-rWX" firstAttribute="leading" secondItem="C52-ZW-O5e" secondAttribute="trailing" constant="15" id="Iaf-ru-eBt"/>
+                            <constraint firstItem="C52-ZW-O5e" firstAttribute="leading" secondItem="fC9-J6-cpa" secondAttribute="leading" constant="10" id="Wwn-wF-5Ux"/>
+                            <constraint firstItem="n88-cC-myJ" firstAttribute="centerY" secondItem="fC9-J6-cpa" secondAttribute="centerY" id="kVP-Wh-uJe"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="fC9-J6-cpa" secondAttribute="bottom" id="2ux-Bc-1Wb"/>
-                <constraint firstItem="fC9-J6-cpa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AxJ-0h-3AF"/>
-                <constraint firstAttribute="trailing" secondItem="fC9-J6-cpa" secondAttribute="trailing" id="c9f-ie-PxM"/>
-                <constraint firstItem="fC9-J6-cpa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="m6O-cr-BME"/>
+                <constraint firstAttribute="trailing" secondItem="fC9-J6-cpa" secondAttribute="trailing" id="2C1-ZX-FiV"/>
+                <constraint firstItem="fC9-J6-cpa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EUD-RN-MZj"/>
+                <constraint firstItem="fC9-J6-cpa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PBT-XI-R3L"/>
+                <constraint firstAttribute="bottom" secondItem="fC9-J6-cpa" secondAttribute="bottom" id="bmT-2I-U0z"/>
             </constraints>
             <connections>
                 <outlet property="foodNameLabel" destination="8l8-cF-rWX" id="PJJ-Cg-l44"/>

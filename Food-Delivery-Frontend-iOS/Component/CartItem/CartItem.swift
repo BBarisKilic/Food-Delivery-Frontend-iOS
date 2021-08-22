@@ -15,6 +15,12 @@ class CartItem: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.addCornerRadius(cornerRadius: 6)
+    }
+    
+    func setData(cart: Cart) {
+        foodNameLabel.text = cart.foodName
+        quantityNumberLabel.text = String(cart.quantity)
     }
 
     @IBAction func deletePressed(_ sender: Any) {

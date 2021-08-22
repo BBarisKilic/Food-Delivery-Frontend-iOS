@@ -22,6 +22,7 @@ class FoodViewController: UIViewController {
     var restaurantDetails: [RestaurantDetail] = []
     var currentQuantity: Int = 1
     var foodPrice: Double = 0.0
+    var foodName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,15 +32,17 @@ class FoodViewController: UIViewController {
     
     func setLayout() {
         addToCartButton.makeSidesRounded()
-        foodNameLabel.text = restaurantDetails[restaurantId].foods[foodId].name
+        foodName = restaurantDetails[restaurantId].foods[foodId].name
+        foodNameLabel.text = foodName
+        foodLabel.text = foodName
         foodImageView.downloaded(from: restaurantDetails[restaurantId].foods[foodId].image)
         foodExplanationLabel.text = restaurantDetails[restaurantId].foods[foodId].explanation
-        foodLabel.text = restaurantDetails[restaurantId].foods[foodId].name
         foodPrice = restaurantDetails[restaurantId].foods[foodId].price
         totalPriceLabel.text = "Total Price: \(String(format: "%.2f", (foodPrice * Double(currentQuantity)))) TL"
     }
     
     @IBAction func addToCardPressed(_ sender: UIButton) {
+        SharedData.sharedInstance.cart.append(Cart(foodName: foodName, quantity: currentQuantity, price: foodPrice))
     }
     
     @IBAction func changeQuantityPressed(_ sender: UIButton) {

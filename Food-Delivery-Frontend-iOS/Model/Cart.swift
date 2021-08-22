@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Cart {
+    let foodName: String
+    let quantity: Int
+    let price: Double
+}

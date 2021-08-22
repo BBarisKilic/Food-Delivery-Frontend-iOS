@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class SharedData {
+    static let sharedInstance = SharedData()
+    var cart: [Cart] = []
+    
+    private init() {}
+}
