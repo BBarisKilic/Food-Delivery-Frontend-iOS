@@ -34,6 +34,22 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginButtonPressed(_ sender: UIButton) {
+        if emailTextField.text != "baris@email.com" || passwordTextField.text != "yemeksepeti" {
+            showErrorDialog()
+        } else {
+            login()
+        }
+    }
+    
+    func showErrorDialog() {
+        let alert = UIAlertController(title: "Information", message: "Wrong email or password.", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
+    }
+    
+    func login() {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "TabBar") as! UITabBarController
         
