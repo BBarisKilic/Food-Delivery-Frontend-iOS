@@ -8,7 +8,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    @IBOutlet weak var appIconImageView: UIImageView!
+    
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -33,8 +33,7 @@ class MainViewController: UIViewController {
     }
     
     func setLayout() {
-        appIconImageView.makeRounded()
-        topView.addCornerRadiusAndElevation(cornerRadius: 35)
+        topView.backgroundColor = #colorLiteral(red: 0.9803921569, green: 0.2901960784, blue: 0.04705882353, alpha: 1)
     }
     
     func resetLayout() {

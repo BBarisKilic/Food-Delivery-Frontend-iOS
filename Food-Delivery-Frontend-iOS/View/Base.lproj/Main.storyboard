@@ -195,12 +195,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="JJA-LL-rej">
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="JJA-LL-rej">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <subviews>
                                     <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Ryi-Ct-y0R">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="174"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homekit" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DTd-Pj-a4V">
+                                                <rect key="frame" x="177" y="104" width="60" height="60"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="HCd-UK-7B0"/>
+                                                    <constraint firstAttribute="height" constant="60" id="wrX-yp-1Nk"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.2901960784" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="DTd-Pj-a4V" firstAttribute="leading" secondItem="Ryi-Ct-y0R" secondAttribute="leading" constant="177" id="GfT-FU-pgH"/>
+                                            <constraint firstAttribute="bottom" secondItem="DTd-Pj-a4V" secondAttribute="bottom" constant="10" id="emr-RD-dZx"/>
+                                            <constraint firstItem="DTd-Pj-a4V" firstAttribute="centerX" secondItem="Ryi-Ct-y0R" secondAttribute="centerX" id="v1h-OR-Twm"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUb-9n-AMh">
                                         <rect key="frame" x="0.0" y="175" width="414" height="638"/>
@@ -914,6 +929,7 @@
     <resources>
         <image name="AppIconBigger" width="50" height="54"/>
         <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="person.crop.square" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

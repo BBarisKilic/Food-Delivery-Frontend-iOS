@@ -44,7 +44,7 @@ class FoodViewController: UIViewController {
     @IBAction func addToCardPressed(_ sender: UIButton) {
         SharedData.sharedInstance.cart.append(Cart(foodName: foodName, quantity: currentQuantity, price: foodPrice))
         
-        let alert = UIAlertController(title: "Information", message: "Your order have been successfully added to cart.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Information", message: "Your order have been successfully added to the cart.", preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {_ in self.afterAddingToCart()}))
         
