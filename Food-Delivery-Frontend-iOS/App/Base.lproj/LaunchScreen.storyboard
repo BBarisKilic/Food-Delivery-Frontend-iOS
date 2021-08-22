@@ -19,36 +19,30 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" highlightedImage="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="ULN-Pr-7cA">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugp-WM-4qh">
-                                <rect key="frame" x="87" y="368" width="240" height="160"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIconBigger" translatesAutoresizingMaskIntoConstraints="NO" id="OjA-wr-5ZE">
-                                        <rect key="frame" x="95" y="53" width="50" height="54"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food for Everyone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Om7-Cj-TYh">
-                                        <rect key="frame" x="50.5" y="117" width="139" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.98039215686274506" green="0.29019607843137252" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIconBigger" translatesAutoresizingMaskIntoConstraints="NO" id="OjA-wr-5ZE">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstItem="OjA-wr-5ZE" firstAttribute="centerX" secondItem="ugp-WM-4qh" secondAttribute="centerX" id="6L5-gD-nMy"/>
-                                    <constraint firstItem="Om7-Cj-TYh" firstAttribute="centerX" secondItem="ugp-WM-4qh" secondAttribute="centerX" id="GhP-Vp-bIg"/>
-                                    <constraint firstItem="Om7-Cj-TYh" firstAttribute="top" secondItem="OjA-wr-5ZE" secondAttribute="bottom" constant="10" id="KVx-5g-0DE"/>
-                                    <constraint firstItem="OjA-wr-5ZE" firstAttribute="centerY" secondItem="ugp-WM-4qh" secondAttribute="centerY" id="hlj-g7-pj8"/>
+                                    <constraint firstAttribute="width" secondItem="OjA-wr-5ZE" secondAttribute="height" multiplier="1:1" id="5pX-J0-Ica"/>
+                                    <constraint firstAttribute="height" constant="100" id="CeA-mR-MVy"/>
+                                    <constraint firstAttribute="width" constant="100" id="Zcu-5s-DM6"/>
                                 </constraints>
-                            </view>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food for Everyone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Om7-Cj-TYh">
+                                <rect key="frame" x="137.5" y="508" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.98039215686274506" green="0.29019607843137252" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ugp-WM-4qh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="324" id="3l4-N1-j6r"/>
+                            <constraint firstItem="OjA-wr-5ZE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="983-5F-qUd"/>
+                            <constraint firstItem="Om7-Cj-TYh" firstAttribute="top" secondItem="OjA-wr-5ZE" secondAttribute="bottom" constant="10" id="CCb-m0-Z4l"/>
                             <constraint firstAttribute="trailing" secondItem="ULN-Pr-7cA" secondAttribute="trailing" id="Dsh-6z-F8b"/>
-                            <constraint firstItem="ugp-WM-4qh" firstAttribute="centerY" secondItem="ULN-Pr-7cA" secondAttribute="centerY" id="OlK-9Y-bc0"/>
-                            <constraint firstItem="ugp-WM-4qh" firstAttribute="centerX" secondItem="ULN-Pr-7cA" secondAttribute="centerX" id="WKo-nO-unJ"/>
+                            <constraint firstItem="Om7-Cj-TYh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="W71-gu-znQ"/>
                             <constraint firstItem="ULN-Pr-7cA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="bdU-8g-UPS"/>
-                            <constraint firstItem="ugp-WM-4qh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="g3u-V4-u5h"/>
+                            <constraint firstItem="OjA-wr-5ZE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="m34-vl-jkT"/>
                             <constraint firstItem="ULN-Pr-7cA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="oEW-fT-iUi"/>
                             <constraint firstAttribute="bottom" secondItem="ULN-Pr-7cA" secondAttribute="bottom" id="zKW-3a-CMl"/>
                         </constraints>
