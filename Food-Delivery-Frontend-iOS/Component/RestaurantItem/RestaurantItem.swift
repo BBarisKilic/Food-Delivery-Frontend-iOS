@@ -16,10 +16,12 @@ class RestaurantItem: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.addCornerRadius(cornerRadius: 6)
     }
     
     func setData(name: String, image: String) {
         self.restaurantLabel.text = name
         self.restaurantImage.downloaded(from: image)
+        self.restaurantImage.addCornerRadius(cornerRadius: 16)
     }
 }

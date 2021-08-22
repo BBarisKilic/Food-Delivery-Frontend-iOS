@@ -17,25 +17,25 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7BC-Ba-3V9">
-                        <rect key="frame" x="4" y="4" width="216" height="72"/>
+                        <rect key="frame" x="4" y="4" width="196" height="72"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tTr-4H-ytP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tTr-4H-ytP">
                                 <rect key="frame" x="0.0" y="0.0" width="80" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="vWG-X9-vr2"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q1D-rp-t4E">
-                                <rect key="frame" x="95" y="11.5" width="121" height="49"/>
+                                <rect key="frame" x="95" y="11.5" width="101" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yH-Kd-32T">
-                                        <rect key="frame" x="0.0" y="0.0" width="121" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="19.5"/>
                                         <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="18"/>
                                         <color key="textColor" red="0.98039215690000003" green="0.2901960784" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1q-Af-5aJ">
-                                        <rect key="frame" x="0.0" y="29.5" width="121" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="29.5" width="101" height="19.5"/>
                                         <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="18"/>
                                         <color key="textColor" red="0.98039215690000003" green="0.2901960784" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                 <constraint firstItem="7BC-Ba-3V9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="GzB-mU-PbY"/>
                 <constraint firstItem="7BC-Ba-3V9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="cTz-t2-2AC"/>
                 <constraint firstAttribute="bottom" secondItem="7BC-Ba-3V9" secondAttribute="bottom" constant="4" id="jMF-qC-GK6"/>
-                <constraint firstAttribute="trailing" secondItem="7BC-Ba-3V9" secondAttribute="trailing" constant="40" id="xjS-zN-udZ"/>
+                <constraint firstAttribute="trailing" secondItem="7BC-Ba-3V9" secondAttribute="trailing" constant="60" id="xjS-zN-udZ"/>
             </constraints>
             <connections>
                 <outlet property="foodImage" destination="tTr-4H-ytP" id="Mdj-qM-Ua6"/>

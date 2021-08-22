@@ -11,30 +11,48 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RestaurantItem" id="gTV-IL-0wX" customClass="RestaurantItem" customModule="Food_Delivery_Frontend_iOS" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DUv-PR-9qU">
-                        <rect key="frame" x="0.0" y="0.0" width="100" height="97"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhs-Rp-y3y">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="WVf-DD-H1n">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A4q-Ky-GI9">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="70"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A4q-Ky-GI9">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="139"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z93-6v-uxY">
-                                <rect key="frame" x="0.0" y="80" width="100" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="0.0" y="145" width="160" height="15"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="14"/>
                                 <color key="textColor" red="0.98039215690000003" green="0.2901960784" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="A4q-Ky-GI9" firstAttribute="top" secondItem="WVf-DD-H1n" secondAttribute="top" id="Kyc-gx-1RU"/>
+                            <constraint firstAttribute="width" constant="160" id="fmu-iK-KLp"/>
+                            <constraint firstAttribute="height" constant="160" id="y65-iS-rKV"/>
+                        </constraints>
                     </stackView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" systemColor="systemTealColor"/>
+            <constraints>
+                <constraint firstItem="uhs-Rp-y3y" firstAttribute="centerY" secondItem="WVf-DD-H1n" secondAttribute="centerY" id="B6Q-2u-90q"/>
+                <constraint firstItem="uhs-Rp-y3y" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="BfE-pJ-wec"/>
+                <constraint firstItem="uhs-Rp-y3y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Bhy-rU-Pji"/>
+                <constraint firstItem="WVf-DD-H1n" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CeD-sR-ha4"/>
+                <constraint firstItem="uhs-Rp-y3y" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="FiZ-6Y-yuJ"/>
+                <constraint firstItem="uhs-Rp-y3y" firstAttribute="centerX" secondItem="WVf-DD-H1n" secondAttribute="centerX" id="O9f-gC-D6H"/>
+                <constraint firstItem="uhs-Rp-y3y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SgK-cd-7kp"/>
+            </constraints>
             <connections>
                 <outlet property="restaurantImage" destination="A4q-Ky-GI9" id="YaY-DB-4qr"/>
                 <outlet property="restaurantLabel" destination="z93-6v-uxY" id="UwI-FU-QmA"/>
@@ -43,6 +61,9 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

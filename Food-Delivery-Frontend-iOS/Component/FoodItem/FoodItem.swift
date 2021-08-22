@@ -22,7 +22,7 @@ class FoodItem: UICollectionViewCell {
     func setData(image: String, name: String, price: Double) {
         self.nameLabel.text = name
         self.foodImage.downloaded(from: image)
-        self.foodImage.addCornerRadius(cornerRadius: 6)
+        self.foodImage.addCornerRadius(cornerRadius: 12)
         self.priceLabel.text = "Price: \(price) TL"
     }
 
