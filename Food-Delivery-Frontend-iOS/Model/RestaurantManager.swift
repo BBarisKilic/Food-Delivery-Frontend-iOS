@@ -15,7 +15,7 @@ protocol RestaurantManagerDelegate {
 struct RestaurantManager {
     let mainURL = "https://api.jsonbin.io/b/"
     let dataId = "6121074f076a223676af0c92"
-    let versionNumber = "3"
+    let versionNumber = "4"
     
     var delegate: RestaurantManagerDelegate?
     
