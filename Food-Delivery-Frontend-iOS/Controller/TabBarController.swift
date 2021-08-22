@@ -20,7 +20,7 @@ class TabBarController: UITabBarController {
         appearanceNavigationBar.tintColor = .white
         
         self.tabBar.tintColor = .white
-        self.tabBar.unselectedItemTintColor = .white.withAlphaComponent(0.8)
+        self.tabBar.unselectedItemTintColor = .white.withAlphaComponent(0.7)
         
         
         let appearance = UITabBarItem.appearance()

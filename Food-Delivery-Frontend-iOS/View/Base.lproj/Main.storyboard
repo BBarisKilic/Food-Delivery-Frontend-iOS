@@ -691,7 +691,42 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Weo-mf-PVy">
                                         <rect key="frame" x="0.0" y="638" width="414" height="175"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ojb-ek-uwW">
+                                                <rect key="frame" x="25" y="10" width="364" height="2"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2k-tZ-BJd">
+                                                <rect key="frame" x="347.5" y="32" width="41.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRV-Jl-qOw">
+                                                <rect key="frame" x="83.5" y="94" width="247" height="61"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                                <inset key="contentEdgeInsets" minX="100" minY="20" maxX="100" maxY="20"/>
+                                                <state key="normal" title="Order">
+                                                    <color key="titleColor" red="0.98039215690000003" green="0.2901960784" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="orderPressed:" destination="ZPL-AU-PxJ" eventType="touchUpInside" id="2Rv-eq-D4z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ojb-ek-uwW" secondAttribute="bottom" constant="163" id="1Pu-pK-YEt"/>
+                                            <constraint firstItem="i2k-tZ-BJd" firstAttribute="top" secondItem="ojb-ek-uwW" secondAttribute="bottom" constant="20" id="9Li-fm-Zta"/>
+                                            <constraint firstItem="i2k-tZ-BJd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Weo-mf-PVy" secondAttribute="leading" constant="20" symbolic="YES" id="JgN-sN-s5U"/>
+                                            <constraint firstItem="ojb-ek-uwW" firstAttribute="centerX" secondItem="Weo-mf-PVy" secondAttribute="centerX" id="MQr-g4-tOe"/>
+                                            <constraint firstItem="ojb-ek-uwW" firstAttribute="top" secondItem="Weo-mf-PVy" secondAttribute="top" constant="10" id="QQS-2J-n8U"/>
+                                            <constraint firstItem="RRV-Jl-qOw" firstAttribute="centerX" secondItem="Weo-mf-PVy" secondAttribute="centerX" id="TLv-kF-4u7"/>
+                                            <constraint firstItem="ojb-ek-uwW" firstAttribute="leading" secondItem="Weo-mf-PVy" secondAttribute="leading" constant="25" id="j7q-lq-Gpp"/>
+                                            <constraint firstAttribute="trailing" secondItem="i2k-tZ-BJd" secondAttribute="trailing" constant="25" id="mPB-Js-bST"/>
+                                            <constraint firstAttribute="bottom" secondItem="RRV-Jl-qOw" secondAttribute="bottom" constant="20" id="vjn-T0-kmI"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -715,6 +750,8 @@
                     <navigationItem key="navigationItem" id="0O6-gh-HxH"/>
                     <connections>
                         <outlet property="collectionView" destination="D2D-AH-nTr" id="hYb-qh-wqA"/>
+                        <outlet property="orderButton" destination="RRV-Jl-qOw" id="EKK-Se-QNB"/>
+                        <outlet property="totalPriceLabel" destination="i2k-tZ-BJd" id="FG4-2e-L1y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Nq-oS-TJ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

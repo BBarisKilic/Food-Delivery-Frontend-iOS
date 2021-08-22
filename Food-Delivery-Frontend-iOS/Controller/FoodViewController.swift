@@ -43,6 +43,8 @@ class FoodViewController: UIViewController {
     
     @IBAction func addToCardPressed(_ sender: UIButton) {
         SharedData.sharedInstance.cart.append(Cart(foodName: foodName, quantity: currentQuantity, price: foodPrice))
+        
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func changeQuantityPressed(_ sender: UIButton) {

@@ -20,7 +20,7 @@ class CartItem: UICollectionViewCell {
     
     func setData(cart: Cart) {
         foodNameLabel.text = cart.foodName
-        quantityNumberLabel.text = String(cart.quantity)
+        quantityNumberLabel.text = "\(cart.quantity)x"
     }
 
     @IBAction func deletePressed(_ sender: Any) {
