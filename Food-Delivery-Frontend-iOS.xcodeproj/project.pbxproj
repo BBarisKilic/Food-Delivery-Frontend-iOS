@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		091712B726D2490D00BBB471 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091712B626D2490D00BBB471 /* FoodViewController.swift */; };
 		091712B926D276B900BBB471 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091712B826D276B900BBB471 /* CartViewController.swift */; };
+		091712BD26D27F7700BBB471 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091712BB26D27F7700BBB471 /* CartItem.swift */; };
+		091712BE26D27F7700BBB471 /* CartItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091712BC26D27F7700BBB471 /* CartItem.xib */; };
 		0933092826CED5CA00E3841E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0933092726CED5CA00E3841E /* AppDelegate.swift */; };
 		0933092A26CED5CA00E3841E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0933092926CED5CA00E3841E /* SceneDelegate.swift */; };
 		0933092C26CED5CA00E3841E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0933092B26CED5CA00E3841E /* LoginViewController.swift */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		091712B626D2490D00BBB471 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		091712B826D276B900BBB471 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		091712BB26D27F7700BBB471 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		091712BC26D27F7700BBB471 /* CartItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartItem.xib; sourceTree = "<group>"; };
 		0933092426CED5CA00E3841E /* Food-Delivery-Frontend-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food-Delivery-Frontend-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0933092726CED5CA00E3841E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0933092926CED5CA00E3841E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091712BA26D27F6400BBB471 /* CartItem */ = {
+			isa = PBXGroup;
+			children = (
+				091712BB26D27F7700BBB471 /* CartItem.swift */,
+				091712BC26D27F7700BBB471 /* CartItem.xib */,
+			);
+			path = CartItem;
+			sourceTree = "<group>";
+		};
 		0933091B26CED5CA00E3841E = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +134,7 @@
 		0986935026D156C2000CC4FA /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				091712BA26D27F6400BBB471 /* CartItem */,
 				0986936526D1B981000CC4FA /* FoodItem */,
 				0986935526D15711000CC4FA /* RestaurantItem */,
 			);
@@ -262,6 +276,7 @@
 				0986936926D1B997000CC4FA /* FoodItem.xib in Resources */,
 				0933093126CED5CA00E3841E /* Assets.xcassets in Resources */,
 				0933092F26CED5CA00E3841E /* Main.storyboard in Resources */,
+				091712BE26D27F7700BBB471 /* CartItem.xib in Resources */,
 				0986935926D1576F000CC4FA /* RestaurantItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +290,7 @@
 			files = (
 				0986934926D1407E000CC4FA /* Restaurant.swift in Sources */,
 				0986936426D1B624000CC4FA /* RestaurantViewControllerExt.swift in Sources */,
+				091712BD26D27F7700BBB471 /* CartItem.swift in Sources */,
 				0986934B26D141B7000CC4FA /* RestaurantDetail.swift in Sources */,
 				0986936826D1B997000CC4FA /* FoodItem.swift in Sources */,
 				0933092C26CED5CA00E3841E /* LoginViewController.swift in Sources */,

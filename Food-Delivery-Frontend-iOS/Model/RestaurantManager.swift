@@ -54,6 +54,7 @@ struct RestaurantManager {
                 let foods = restaurant.foods
                 
                 let restaurantDetail = RestaurantDetail(name: name, image: image, location: location, foods: foods)
+                
                 restaurantDetails.append(restaurantDetail)
             }
             return restaurantDetails
