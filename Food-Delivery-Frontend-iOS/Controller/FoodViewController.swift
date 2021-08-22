@@ -44,7 +44,12 @@ class FoodViewController: UIViewController {
     @IBAction func addToCardPressed(_ sender: UIButton) {
         SharedData.sharedInstance.cart.append(Cart(foodName: foodName, quantity: currentQuantity, price: foodPrice))
         
-        dismiss(animated: true, completion: nil)
+        let alert = UIAlertController(title: "Information", message: "Your order have been successfully added to cart.", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {_ in self.afterAddingToCart()}))
+        
+        self.present(alert, animated: true)
+        
     }
     
     @IBAction func changeQuantityPressed(_ sender: UIButton) {
@@ -61,5 +66,9 @@ class FoodViewController: UIViewController {
                 totalPriceLabel.text = "Total Price: \(String(format: "%.2f", (foodPrice * Double(currentQuantity)))) TL"
             }
         }
+    }
+    
+    func afterAddingToCart() {
+        dismiss(animated: true, completion: nil)
     }
 }

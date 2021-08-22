@@ -30,6 +30,6 @@ class TabBarController: UITabBarController {
         
         tabBarItems[0].title = "Main"
         tabBarItems[1].title = "Cart"
-        tabBarItems[2].title = "More"
+        tabBarItems[2].title = "User"
     }
 }

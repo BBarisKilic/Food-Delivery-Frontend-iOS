@@ -66,12 +66,20 @@ class CartViewController: UIViewController {
     
     @IBAction func orderPressed(_ sender: UIButton) {
         
-        let alert = UIAlertController(title: "Do you want to continue?", message: "You're ordering \(totalQuantity) foods for \(String(format: "%.2f", totalPrice)) TL.", preferredStyle: .alert)
+        if cart.count != 0 {
+            let alert = UIAlertController(title: "Do you want to continue?", message: "You're ordering \(totalQuantity) foods for \(String(format: "%.2f", totalPrice)) TL.", preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {_ in self.afterOrdering()}))
-        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {_ in self.afterOrdering()}))
+            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
 
-        self.present(alert, animated: true)
+            self.present(alert, animated: true)
+        } else {
+            let alert = UIAlertController(title: "Information", message: "Add something to the cart before ordering.", preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            
+            self.present(alert, animated: true)
+        }
     }
     
     func afterOrdering() {
@@ -81,6 +89,30 @@ class CartViewController: UIViewController {
         self.viewWillAppear(false)
         
         let alert = UIAlertController(title: "Information", message: "You have successfully ordered.", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+      didSelectItemAt indexPath: IndexPath) {
+        print("\(cart[indexPath.row].foodName) clicked")
+        
+        let alert = UIAlertController(title: "Do you want to continue?", message: "\(cart[indexPath.row].quantity) \(cart[indexPath.row].foodName) will be removed from the cart.", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {_ in self.afterRemoving(id: indexPath.row, quantity: self.cart[indexPath.row].quantity, food: self.cart[indexPath.row].foodName)}))
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+
+        self.present(alert, animated: true)
+      }
+    
+    func afterRemoving(id: Int, quantity: Int, food: String) {
+        SharedData.sharedInstance.cart.remove(at: id)
+        
+        self.viewWillAppear(false)
+        
+        let alert = UIAlertController(title: "Information", message: "\(quantity) \(food) have been successfully removed from the cart.", preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         
