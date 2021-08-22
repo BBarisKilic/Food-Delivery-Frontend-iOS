@@ -44,4 +44,14 @@ class RestaurantViewController: UIViewController {
         flow.minimumInteritemSpacing = CGFloat(self.cellMarginSize)
         flow.minimumLineSpacing = CGFloat(self.cellMarginSize)
     }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath) {
+        print("\(restaurantDetails[restaurantId].foods[indexPath.row].name) clicked")
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let foodVC = storyboard.instantiateViewController(identifier: "Food")
+        
+        present(foodVC, animated: true, completion: nil)
+    }
 }

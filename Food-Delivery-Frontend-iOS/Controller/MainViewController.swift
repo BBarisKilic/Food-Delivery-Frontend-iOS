@@ -52,7 +52,7 @@ class MainViewController: UIViewController {
         print("\(restaurantDetails[indexPath.row].name) clicked")
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Restaurant") as! RestaurantDetailController
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Restaurant") as! RestaurantViewController
         
         nextViewController.restaurantId = indexPath.row
         nextViewController.restaurantDetails = restaurantDetails

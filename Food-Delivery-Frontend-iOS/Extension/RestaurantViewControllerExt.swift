@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension RestaurantDetailController: UICollectionViewDataSource {
+extension RestaurantViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return self.restaurantDetails[0].foods.count
@@ -21,7 +21,7 @@ extension RestaurantDetailController: UICollectionViewDataSource {
     }
 }
 
-extension RestaurantDetailController: UICollectionViewDelegateFlowLayout {
+extension RestaurantViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = self.calculateWith()
         
