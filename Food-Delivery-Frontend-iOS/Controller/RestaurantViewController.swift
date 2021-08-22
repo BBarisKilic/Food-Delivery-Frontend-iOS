@@ -7,11 +7,15 @@
 
 import UIKit
 
-class RestaurantDetailController: UIViewController {
+class RestaurantViewController: UIViewController {
 
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var restaurantNameLabel: UILabel!
+    @IBOutlet weak var restaurantImageView: UIImageView!
+    @IBOutlet weak var restaurantAddressLabel: UILabel!
     
+    var restaurantId: Int = 0
     var restaurantDetails: [RestaurantDetail] = []
     var estimateWidth = 160.0
     var cellMarginSize = 16.0
@@ -30,6 +34,9 @@ class RestaurantDetailController: UIViewController {
     
     func setLayout() {
         topView.addElevation(cornerRadius: 35)
+        restaurantNameLabel.text = restaurantDetails[restaurantId].name
+        restaurantImageView.downloaded(from: restaurantDetails[restaurantId].image)
+        restaurantAddressLabel.text = restaurantDetails[restaurantId].location
     }
     
     func setGridView() {
